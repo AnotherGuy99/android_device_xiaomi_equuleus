@@ -6,11 +6,16 @@
 
 $(call inherit-product, device/xiaomi/equuleus/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity X stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Infinity X flags
+INFINITY_MAINTAINER := NUTRISATRI
+TARGET_HAS_UDFPS := true
+WITH_GAPPS ?= true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_equuleus
+PRODUCT_NAME := infinity_equuleus
 PRODUCT_DEVICE := equuleus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8 Pro

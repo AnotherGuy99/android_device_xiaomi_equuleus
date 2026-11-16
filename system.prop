@@ -6,3 +6,8 @@ persist.camera.sat.fallback.lux.d=50
 
 # Display
 ro.surface_flinger.has_wide_color_display=true
+
+# Infinity X
+ro.product.marketname=Mi 8 Pro
+ro.infinity.soc=Snapdragon 845
+ro.infinity.camera=12MP + 12MP
