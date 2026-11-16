@@ -20,6 +20,11 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/equuleus.config
 
+# Kernel prebuilt NUTRISATRI (4.9). Source kernel LineageOS tetap di-sync
+# hanya untuk kernel headers; boot memakai Image.gz-dtb di bawah ini.
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/xiaomi/equuleus-kernel/Image.gz-dtb
+
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 
